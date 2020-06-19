@@ -1,0 +1,97 @@
+<html>
+
+<head>
+  <title>TreinerTumb</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script type='text/javascript' src='./javascripts/atletas.js'></script>
+
+</head>
+
+<body class="grid-container" background="./images/image track 1.jpg">
+
+  
+
+  <header class="T1">
+    <img src="images/tumbling.png" width="200" />
+    <section class="A1">
+      <h1>TreinerTumb</h1>
+      <p>A plataforma que te permite gerenciar tua equipa de tumbling</p>
+    </section>
+    <section class="A2">
+      <a href="sobre.html" style="color:white"> Sobre nós </a>
+    </section>
+    <section>
+      <img src="images/login.png" width="10%" />
+      <a href="menus.html" style="color:white">Letícia Sales</a>
+    </section>
+
+
+  </header>
+  <nav class="T2">
+
+    <h4 style="color: #333333">As Minhas Equipas:</h4>
+    <p style="color: #333333" onclick="mostrar_ini()"><img src="images/tumbling3.png" width="15%" />Iniciados - Setúbal</p>
+    <p style="color: #333333"><img src="images/tumbling3.png" width="15%" />Juvenil - Setúbal</p>
+    <p style="color: #333333"><img src="images/tumbling3.png" width="15%" />Júnior - Setúbal</p>
+    <p style="color: #333333"><img src="images/tumbling3.png" width="15%" />Sénior- Setúbal</p>
+    
+
+
+  </nav>
+
+  <nav class="T3" id= "calendario">
+    <h4>Eventos: </h4>
+    <form id="novo_evento" action="" method="post">
+      Nome do Evento: <input type="text" name="nome" required/><br/><br/>            
+      Data do Evento: <input type="date" name="data" required/><br/><br/>            
+      <button type="submit"> Cadastrar novo evento </button>
+  </form>
+    
+  </nav>
+
+  <aside class="T6">
+    <h1>Menu Principal</h1>
+
+  </aside>
+
+  <main class="T4" id="menus">
+      
+    <section id="atl" onclick="mostrar_atletas()"></section>
+    <section id="prov" onclick="mostrar_provas()"></section>
+    <section id="add"></section>
+
+ </main>
+
+  <footer class="T5">
+
+    <section>
+      <h3>Contactos</h3>
+      <a href="mailto:admin@ensino.pt"><img src="images/email.png" width="8%" /></a>
+      <a href="tel:2112312312"><img src="images/telefone.png" width="8%" /></a>
+      <a href="https://www.instagram.com/?hl=pt"><img src="images/instagram.png" width="8%" /></a>
+      <a href="https://pt-pt.facebook.com/"><img src="images/facebook.png" width="8%" /></a>
+    </section>
+    <section>
+      <h3>TreinerTumb</h3>
+      <a href="mailto:admin@ensino.pt" style="color: rgba(255, 255, 255, 0.575);">Sobre</a><br>
+      <a href="mailto:admin@ensino.pt" style="color: rgba(255, 255, 255, 0.575);">Política de Privacidade</a><br>
+      <a href="mailto:admin@ensino.pt" style="color: rgba(255, 255, 255, 0.575);">Política de uso</a><br>
+      <a href="mailto:admin@ensino.pt" style="color: rgba(255, 255, 255, 0.575);">Perguntas frequentes</a>
+
+    </section>
+    <section>
+      <h3>Treinador</h3>
+      <a href="mailto:admin@ensino.pt" style="color: rgba(255, 255, 255, 0.575);">Funcionalidades</a><br>
+      <a href="mailto:admin@ensino.pt" style="color: rgba(255, 255, 255, 0.575);">Todos os Planos</a><br>
+    </section>
+
+
+
+
+  </footer>
+
+  <script src="./javascripts/index.js"></script>
+
+</body>
+
+</html>
